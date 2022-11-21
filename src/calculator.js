@@ -16,7 +16,7 @@ class Calculator {
   addition(number1, number2) {
     if (this.valueTest(number1, number2)) {
       let result = number1 + number2;
-      this.result += result;
+      this.result = result;
       return result;
     } else {
       return "Error : Not found number";
@@ -26,7 +26,7 @@ class Calculator {
   substraction(number1, number2) {
     if (this.valueTest(number1, number2)) {
       let result = number1 - number2;
-      this.result += result;
+      this.result = result;
       return result;
     } else {
       return "Error : Not found number";
@@ -36,7 +36,7 @@ class Calculator {
   division(number1, number2) {
     if (this.valueTest(number1, number2) && number2 != 0) {
       let result = number1 / number2;
-      this.result += result;
+      this.result = result;
       return result;
     } else {
       return number2 == 0
@@ -48,7 +48,7 @@ class Calculator {
   multiplication(number1, number2) {
     if (this.valueTest(number1, number2)) {
       let result = number1 * number2;
-      this.result += result;
+      this.result = result;
       return result;
     } else {
       return "Error : Not found number";
