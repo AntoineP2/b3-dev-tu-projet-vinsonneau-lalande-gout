@@ -36,7 +36,7 @@ describe("Testing the Calculator Function", function () {
     done();
   });
 
-  it("4. Error test000 ", function (done) {
+  it("4. Error test ", function (done) {
     let calculator = new Calculator();
     expect(calculator.division("a", 5)).to.equal("Error : Not found number");
     expect(calculator.addition(-70, "c")).to.equal("Error : Not found number");
