@@ -23,10 +23,11 @@ describe("Testing the Calculator Function", function () {
     expect(calculator.multiplication(5, 4)).to.equal(20);
     expect(calculator.multiplication(-7, -5)).to.equal(35);
     expect(calculator.multiplication(-10, 15)).to.equal(-150);
+    expect(calculator.multiplication(-10, 0)).to.equal(0);
     done();
   });
 
-  it("3. Test of division function", function (done) {
+  it("4. Test of division function", function (done) {
     let calculator = new Calculator();
     expect(calculator.division(10, 5)).to.equal(2);
     expect(calculator.division(-70, -10)).to.equal(7);
@@ -34,7 +35,7 @@ describe("Testing the Calculator Function", function () {
     done();
   });
 
-  it("4. Error test ", function (done) {
+  it("5. Error test ", function (done) {
     let calculator = new Calculator();
     expect(calculator.division("a", 5)).to.equal("Error : Not found number");
     expect(calculator.addition(-70, "c")).to.equal("Error : Not found number");
@@ -47,7 +48,7 @@ describe("Testing the Calculator Function", function () {
     done();
   });
 
-  it("5. Division by 0", function (done) {
+  it("6. Division by 0", function (done) {
     let calculator = new Calculator();
     expect(calculator.division(5, 0)).to.equal(
       "You can't divide a number by 0"

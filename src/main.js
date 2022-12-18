@@ -16,13 +16,15 @@ while (statue == 1) {
     console.log("6 = Simple Pow");
     console.log("7 = Square Root");
     let calculeChoice = Number(prompt("Choose a calcule type: "));
-    
     if (calculeChoice <= 5) {
         var1 = Number(prompt("Choose a value: "));
         var2 = Number(prompt("Choose a another value : "));
     }
-    else {
+    else if (caclculeChoice <=7) {
         var1 = Number(prompt("Choose a value: "));
+    }
+    else{
+        console.log("Vous n'avez pas selectionné de type de calcule")
     }
     switch (calculeChoice) {
         case 1:
